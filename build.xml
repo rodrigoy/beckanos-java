@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="beckanos-java" default="assembly" basedir=".">
+
+	<description>VRaptor 3 site module build</description>
+
+	<path id="libs.classpath" path=".">
+		<fileset dir="lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	
+	<path id="compile.classpath" path=".">
+		<fileset dir="src/content/WEB-INF/lib">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="../common">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<target name="hotdeploy" description="--> dev env deploy">
+		<delete dir="/home/rodrigoy/Desktop/jetty-6.1.23/webapps/beckanos-java" includes="**/*" />
+		<copy todir="/home/rodrigoy/Desktop/jetty-6.1.23/webapps/beckanos-java">
+			<fileset dir="src/content" />
+		</copy>
+	</target>
+
+	<target name="compile" description="--> compiles the classes">
+		<delete dir="src/content/WEB-INF/classes" includes="**/*" />
+		<javac destdir="src/content/WEB-INF/classes" srcdir="src/java" classpathref="compile.classpath" debug="true" encoding="UTF-8" />
+		<copy todir="src/content/WEB-INF/classes">
+			<fileset dir="src/resources" />
+		</copy>
+	</target>
+
+	<target name="assembly" depends="compile" description="--> assemblies the distribution">
+		<war destfile="site.war" webxml="src/content/WEB-INF/web.xml">
+			<fileset dir="src/content" excludes="src/content/WEB-INF/web.xml"/>
+		</war>
+	</target>
+</project>

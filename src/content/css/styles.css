@@ -1,0 +1,129 @@
+body {
+	background-color: olive;
+	font-size: small;
+}
+
+a:link {
+	text-decoration: none;
+	color: white;
+}
+
+a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	font-weight: bold;
+	color: white;
+}
+
+
+#mensagem_div {
+	margin: 10px;
+	padding: 5px;
+	border: solid 2px navy;
+	color: navy;
+}
+
+#erro_div {
+	font-weight: bold;
+	margin: 10px;
+	padding: 5px;
+	border: solid 2px red;
+	color: red;
+}
+
+#login_div {
+	text-align: right;
+	padding: 55px;
+	width: 400px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+}
+
+.login_table {
+	text-align: right;
+	width: 200px;
+	margin-top: 18px;
+	margin-left: auto;
+	
+}
+
+.titulo {
+	font-size: xx-large;
+	font-family: cursive;
+	color: olive;
+}
+
+.descricao {
+	font-size: small;
+	font-family: monospace;
+}
+
+#content_div {
+	position:relative;
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-top: 15px;
+	width: 800px;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+}
+
+#actions_div {
+	position: absolute;
+	display: block;
+	left:620px;
+	top:-10px;
+	padding: 7px;
+	width: 200px;
+	height: 18px;
+	background-color: #668833;
+	text-align: right;
+}
+
+#right_div {
+	position: absolute;
+	display: block;
+	left:620px;
+	top:30px;
+	padding: 7px;
+	width: 200px;
+	background-color: #CCFF99;
+	text-align: right;
+}
+
+.profile_login {
+	font-size: x-large;
+}
+
+.profile_dados {
+	font-size: smaller;
+}
+
+#left_div {
+	width: 560px;
+}
+
+.usuario_diz {
+	color: olive;
+}
+
+#atualizacao_status {
+	position: relative;
+	padding-left: 4px;
+	height: 42px;
+	width: 460px;
+	background-color: #EEEEEE;
+}
+
+.tempo_atras {
+	color: gray;
+	font-style: italic;
+	font-size: small;
+}

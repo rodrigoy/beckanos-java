@@ -1,0 +1,25 @@
+===============   =======
+B E C K A N O S   J A V A
+===============   =======
+
+Esta é a arquitetura inicial do treinamento XP/TDD da Aspercom em Java. 
+
+http://www.aspercom.com.br/ead/course/view.php?id=16
+
+Estamos utilizando Jetty, JPA, Vraptor3, JUnit e JBehave sobre WebDriver 
+(HTMLUnit). O sistema exemplo é uma rede social corporativa parecida com 
+o Twitter, e explora TDD, BDD e ATDD.
+
+Configurando e validando a sua instalação:
+
+1. Baixe o projeto num diretório
+2. É necessário uma instalação do banco de dados MySQL
+3. Abra o projeto no seu eclipse
+4. Configure o JPA (banco de dados) em /java/src/resources/META-INF/persistence.xml
+5. Rode o Embedable Jetty em /java/src/java/utils/ServerBootstrap
+6. Acesse o browser em http://localhost:8080/login
+7. Use o usuário "admin" e a senha "teste123", você deve acessar a home
+8. Rode o teste do JBehave como um Junit Test em /java/src/specs/integration/Login
+
+Rodrigo Yoshima
+ASPERCOM
