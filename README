@@ -16,10 +16,11 @@ Configurando e validando a sua instalação:
 2. É necessário uma instalação do banco de dados MySQL
 3. Abra o projeto no seu eclipse
 4. Configure o JPA (banco de dados) em /java/src/resources/META-INF/persistence.xml
+	(somente caso não for usar o HSQLDB embarcado)
 5. Rode o Embedable Jetty em /java/src/java/utils/ServerBootstrap
 6. Acesse o browser em http://localhost:8080/login
 7. Use o usuário "admin" e a senha "teste123", você deve acessar a home
-8. Rode o teste do JBehave como um Junit Test em /java/src/specs/integration/Login
+8. Execute com o JUnit o teste do JBehave em /java/src/specs/integration/Login - barra verde == sucesso
 
 Rodrigo Yoshima
 ASPERCOM
