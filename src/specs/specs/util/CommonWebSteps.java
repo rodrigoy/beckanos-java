@@ -31,8 +31,18 @@ public class CommonWebSteps extends PtSteps {
 	}
 
 	@Given("que estou na home")
+	@When("estou na home")
 	public void estouNaHome() {
-		navegarPara("/");
+		navegarPara("/home");
+	}
+	
+	@Given("que estou logado como $login com a senha \"$senha\"")
+	public void logar(@Named("login") String login, @Named("senha") String senha) {
+		naoEstouLogado();
+		navegarPara("/login");
+		digitoNoCampo(login, "login");
+		digitoNoCampo(senha, "senha");
+		clicoNoBotao("login");
 	}
 		
 	@When("digito \"$chars\" no campo $input_text_name")

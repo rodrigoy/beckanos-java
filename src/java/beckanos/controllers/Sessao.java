@@ -25,7 +25,7 @@ public class Sessao {
 	public Usuario getUsuarioLogado() {
 		return (Usuario) this.session.getAttribute(USUARIO_LOGADO);
 	}
-
+	
 	public void logout() {
 		this.session.removeAttribute(USUARIO_LOGADO);
 	}

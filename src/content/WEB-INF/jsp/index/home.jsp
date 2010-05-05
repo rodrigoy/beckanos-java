@@ -21,7 +21,7 @@
 			</div>
 			
 			<div id="right_div">
-			<img src="<c:url value='/images/2.png'/>"/>
+			<img src="<c:url value='/images/2.png'/>"/><br/>
 			<span class="profile_login">@kentbeck</span><br/>
 			Kent Beck<br/>
 			<span class="profile_dados">Casado, 52 anos</span>

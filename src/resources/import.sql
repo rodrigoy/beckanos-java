@@ -1,2 +1,2 @@
-INSERT INTO Usuario (id, email, login, nome, senha) VALUES (0, 'admin@email.com', 'admin', 'Administrador', 'teste123');
-INSERT INTO Usuario (id, email, login, nome, senha) VALUES (1, 'kentbeck@email.com', 'kentbeck', 'Kent Beck', 'teste123');
+INSERT INTO Usuario (email, login, nome, senha, estadoCivil, sexo, dtNasc) VALUES ('admin@email.com', 'admin', 'Administrador', 'teste123', 'C', 'M', '2001-01-01');
+INSERT INTO Usuario (email, login, nome, senha, estadoCivil, sexo, dtNasc) VALUES ('kentbeck@email.com', 'kentbeck', 'Kent Beck', 'beck123', 'C', 'M', '1977-08-08');

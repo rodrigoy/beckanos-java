@@ -61,6 +61,8 @@
 	<classpathentry kind="lib" path="testlibs/nekohtml-1.9.13.jar"/>
 	<classpathentry kind="lib" path="testlibs/xalan-2.7.1.jar"/>
 	<classpathentry kind="lib" path="testlibs/jbehave-core-2.5.jar"/>
+	<classpathentry kind="lib" path="testlibs/mockito-all-1.8.4.jar"/>
+	<classpathentry kind="lib" path="src/content/WEB-INF/lib/hsqldb.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="src/content/WEB-INF/classes"/>
 </classpath>
