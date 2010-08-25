@@ -27,7 +27,7 @@ public class IndexController {
 	@Path("/logout")
 	public void logout() {
 		sessao.logout();
-		result.redirectTo(IndexController.class).login();
+		result.redirectTo(IndexController.class).login();	
 	}
 	
 	@Path("/login")

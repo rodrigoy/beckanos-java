@@ -1,9 +1,5 @@
 package specs.controllers;
 
-import java.util.Iterator;
-
-import junit.framework.Assert;
-
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;

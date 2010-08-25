@@ -11,7 +11,7 @@ public class TodosUsuarios  {
 
 	private EntityManager manager;
 
-	TodosUsuarios(EntityManager manager) {
+	public TodosUsuarios(EntityManager manager) {
 		this.manager = manager;
 	}
 
